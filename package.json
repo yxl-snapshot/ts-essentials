@@ -6,7 +6,7 @@
     "types",
     "essentials"
   ],
-  "version": "2.0.0-yxl",
+  "version": "2.1.0-yxl",
   "main": "dist/index.js",
   "types": "dist/types.d.ts",
   "repository": "git@github.com:krzkaczor/ts-essentials.git",
