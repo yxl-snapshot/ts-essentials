@@ -6,7 +6,7 @@
     "types",
     "essentials"
   ],
-  "version": "2.0.0",
+  "version": "2.0.0-yxl",
   "main": "dist/index.js",
   "types": "dist/types.d.ts",
   "repository": "git@github.com:krzkaczor/ts-essentials.git",
@@ -15,6 +15,7 @@
   "scripts": {
     "build": "rm -rf ./dist && tsc -p tsconfig.prod.json --outDir ./dist",
     "prepublishOnly": "yarn test && yarn build",
+    "prepare": "npm run build",
     "test": "prettier -c **/*.ts && tsc --noEmit",
     "test:fix": "prettier --write **/*.ts && tsc --noEmit"
   },
@@ -22,7 +23,6 @@
     "dist"
   ],
   "devDependencies": {
-    "conditional-type-checks": "^0.5.0",
     "prettier": "^1.16.1",
     "typescript": "^3.2.2"
   }
